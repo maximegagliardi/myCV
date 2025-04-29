@@ -10,6 +10,10 @@ import scipy.stats
 from datetime import datetime
 import matplotlib.pyplot as plt
 
+
+#The code is fully interactive, which means that all you have to do is enter the parameters of the option you want to price once the code has been executed, to obtain the option price, as well as the payoff graph.
+
+
 def get_input(prompt, cast_func, error_msg):
     while True:
         try:
