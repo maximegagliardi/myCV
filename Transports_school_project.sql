@@ -1,6 +1,18 @@
 -- init database
 -- T1
 
+/*
+   Database Schema and Procedures for a Transportation System
+
+   This SQL script defines a comprehensive database schema for managing a transportation system.
+   It establishes the core infrastructure with tables for transport types, zones, stations, lines,
+   and their relationships, as well as user-related structures such as person records, offers,
+   subscriptions, contracts, journey tracking, and billing. In addition, it includes logging tables to
+   track historical changes and stored procedures to add new entries with validation logic.
+   The script also provides various views and functions that simplify common queries, perform data
+   retrieval and calculations, and support business rules for cost estimation and subscription management.
+*/
+
 CREATE TABLE transport_type (
     	code VARCHAR(3) PRIMARY KEY,
     	name VARCHAR(32) UNIQUE,
