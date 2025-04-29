@@ -1,5 +1,25 @@
 #Projet Analyse R
 
+#' Customer Data Analysis for Identifying Default Risk Profiles
+#'
+#' This R script is designed to analyze customer data to identify profiles at risk
+#' of payment default. It starts with data preprocessing, including handling missing values,
+#' normalization, and conversion of categorical variables.
+#'
+#' Next, exploratory data analysis is performed to uncover key patterns and understand
+#' the distribution of variables. Clustering techniques, such as K-means, are applied
+#' to segment customers into homogeneous groups.
+#'
+#' Decision tree models are then trained and evaluated to classify customers
+#' based on their likelihood of default. Finally, the best-performing model is used
+#' to predict default risks on a new dataset.
+#'
+#' @docType package
+#' @name customer_analysis
+#'
+NULL
+
+
 setwd("C:/Users/maxgu/OneDrive/EDHEC/M1/Analyse de données/Projet analyse")
 
 projet <- read.csv("projet.csv", header = TRUE, sep = ",", dec = ".", stringsAsFactors = TRUE)
